@@ -7,11 +7,11 @@
 :root {
     font-size: 62.5%;
 
-    --bg-color-black: black;
-    --bg-color-white: white;
-    --bg-color-100: #121214;
-    --bg-color-300: #387E96;
-    --bg-color-400: #065E7C;
+    --bg-color-black: hsl(0, 0%, 0%);
+    --bg-color-white: hsl(0, 0%, 100%);
+    --bg-color-100: hsl(240, 5%, 7%);
+    --bg-color-300: hsl(195, 46%, 40%);
+    --bg-color-400: hsl(195, 91%, 25%);
 }
 
 html, body, input {
@@ -46,7 +46,7 @@ header {
 }
 
 form input {
-    background-color: rgba(255, 255, 255, 0.20);
+    background-color: hsla(0, 0%, 100%, 0.2);
     border: 0;
     border-radius: .4rem;
     
@@ -55,7 +55,7 @@ form input {
 }
 
 form input::placeholder {
-    color: white;
+    color: var(--bg-color-white);
     font-size: 1.6rem;
     font-weight: 600;
 }
